@@ -20,7 +20,7 @@ import { StatusBar } from 'react-native';
 import { onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth';
 import ForgotPasswordComp from './screens/auth/forgotpassword';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 export default function App() {
   const Stack = createStackNavigator()

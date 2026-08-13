@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({navigation}) => {
                 <Ionicons name="arrow-back-outline" size={24} color="black" />
             </TouchableOpacity>
             {auth.currentUser?.email && <TouchableOpacity onPress={()=>navigation.navigate('main',{screen:'cart'})}>
-                <AntDesign name="shoppingcart" size={24} color="black"  />
+                <AntDesign name="shopping-cart" size={24} color="black"  />
             </TouchableOpacity>}
             {!auth.currentUser?.email && <TouchableOpacity onPress={()=>navigation.navigate('login')} style={{position:'absolute', top:20, right:10, borderRadius:10, elevation:2, paddingHorizontal:20, paddingVertical:5}}>
                         <Text style={{color:'blue', fontSize:16}}>Login</Text>
